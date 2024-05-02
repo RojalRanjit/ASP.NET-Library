@@ -1,0 +1,75 @@
+﻿@model List<Book>
+<form method="get" asp-controller="Home" asp-action="Index">
+    <div class="input-group rounded mb-3">
+        <input type="search" name="search" class="form-control rounded" placeholder="Search by book name" aria-label="Search" aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+            <button class="btn" style="padding:0" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                    <path d="M 21 3 C 11.6 3 4 10.6 4 20 C 4 29.4 11.6 37 21 37 C 24.354553 37 27.47104 36.01984 30.103516 34.347656 L 42.378906 46.621094 L 46.621094 42.378906 L 34.523438 30.279297 C 36.695733 27.423994 38 23.870646 38 20 C 38 10.6 30.4 3 21 3 z M 21 7 C 28.2 7 34 12.8 34 20 C 34 27.2 28.2 33 21 33 C 13.8 33 8 27.2 8 20 C 8 12.8 13.8 7 21 7 z"></path>
+                </svg>
+            </button>
+        </span>
+    </div>
+    <div class="row">
+        <div class="col-md-3 mb-5">
+            <select name="Genre" id="genre" class="form-select ">
+                <option hidden value="" disabled="disabled" selected>Genre</option>
+                @foreach (var data in ViewBag.GenreList)
+                {
+                    <option value="@data.Name" >@data.Name</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-3">
+            <select name="Author" id="author" class="form-select">
+                <option hidden value="" disabled="disabled" selected>Author</option>
+
+                @foreach (var data in ViewBag.AuthorList)
+                {
+                    <option value="@data.AuthorName">@data.AuthorName</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-3">
+            <input name="Language" type="text" class="form-control" placeholder="Language"></input>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-success d-flex gap-2 justify-content-center align-items-center" type="submit">Filter <i class="fa-solid fa-filter"></i></button>
+        </div>
+    </div>
+</form>
+
+<section class="container mt-5">
+    <h2 class=" mb-4 row d-flex justify-content-center align-items-center text-white">Available Books</h2>
+        <div class="row" id="pagination">
+        @foreach (var data in Model)
+        {
+            <div class="col-sm-6">
+                <div class="card mb-3" style="max-width: 540px; height: 400px">
+                    <div class="row d-flex">
+                        <div class="col-md-6">
+                            <img src="@Url.Content(data.Image)" style="height:400px; width:280px"  class=" rounded-start" >
+                        </div>
+                        <div class="col-md-6" style="color: black">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bolder text-decoration-underline"> @data.Title</h5>
+                                <p class="card-text">Genre: @data.Genre.Name</p>
+                                <p class="card-text">Author Name: @data.Author.AuthorName</p>
+                                <p class="card-text">Language: @data.Language</p>
+                                <a class="btn btn-primary" asp-action="BookDetails" asp-controller="Book" asp-route-id="@data.BookId">View Details</a>
+                                <p class="card-text" style="position: absolute; bottom: 0"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#genre").select2();
+        $("#author").select2();
+    });
+</script>

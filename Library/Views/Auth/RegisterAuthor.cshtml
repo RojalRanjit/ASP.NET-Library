@@ -1,0 +1,17 @@
+﻿<h1 class="row d-flex justify-content-center align-items-center">Register as Author</h1>
+
+<div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-5">
+            <form asp-action="RegisterAuthor" asp-controller="Auth" method="Post">
+                <label>Full Name</label>
+                <input type="text" name="AuthorName" class="form-control" />
+                <label>Email</label>
+                <input type="email" name="AuthorEmail" class="form-control" />
+                <label>Password</label>
+                <input type="password" name="Password" class="form-control mb-3" />
+                <button class="btn btn-success mb-2 align-items-center" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>

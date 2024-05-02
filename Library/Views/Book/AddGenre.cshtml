@@ -1,0 +1,35 @@
+﻿@model Genre
+<div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-5">
+            <form asp-action="AddGenre" asp-controller="Book" method="Post" enctype="multipart/form-data">
+                <label>Genre</label>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-success mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+                            <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2z" />
+                        </svg>
+                    </button>
+                    <input type="text" name="Name" class="form-control mb-3" />
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-8 ">
+                                
+                                    <input name="Books.index" value="1" hidden />
+                                    <label>Title</label>
+                                    <input type="text" name="Books[1].title" class="form-control" />
+                                    <label>Image</label>
+                                    <input type="file" name="Image" class="form-control" />
+                                    <label>Language</label>
+                                    <input type="text" name="Books[1].language" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success mb-2 align-items-center " type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+﻿@model Book
+<h1 class=" mb-4 row d-flex justify-content-center align-items-center text-white">Book Details</h1>
+<div class="d-flex justify-content-center">
+    <img src="@Url.Content(Model.Image)" style=" height: 600px; width: 500px" class="card-img-top" alt="...">
+</div>
+
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title fw-bold">@Model.Title</h5>
+        <p class="card-text">AuthorName: @Model.Author.AuthorName</p>
+        <p class="card-text">Genre: @Model.Genre.Name</p>
+        <p class="card-text">Language: @Model.Language</p>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+</div>

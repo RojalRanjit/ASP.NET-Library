@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Dot Net\\Library\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|e:\\dot net\\library\\library\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|solutionrelative:library\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|e:\\dot net\\library\\library\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|solutionrelative:library\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|e:\\dot net\\library\\library\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|solutionrelative:library\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|e:\\dot net\\library\\library\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|solutionrelative:library\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|e:\\dot net\\library\\library\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|solutionrelative:library\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|e:\\dot net\\library\\library\\views\\book\\bookdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|solutionrelative:library\\views\\book\\bookdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|e:\\dot net\\library\\library\\views\\book\\addbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{160F0E41-8538-4261-9095-C155EC172029}|Library\\Library.csproj|solutionrelative:library\\views\\book\\addbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\Dot Net\\Library\\Library\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\Dot Net\\Library\\Library\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Library\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAcwE8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:50:06.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\Dot Net\\Library\\Library\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Library\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\Dot Net\\Library\\Library\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Library\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:21:58.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Author.cs",
+              "DocumentMoniker": "E:\\Dot Net\\Library\\Library\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\Author.cs",
+              "ToolTip": "E:\\Dot Net\\Library\\Library\\Models\\Author.cs",
+              "RelativeToolTip": "Library\\Models\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T06:54:18.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddBook.cshtml",
+              "DocumentMoniker": "E:\\Dot Net\\Library\\Library\\Views\\Book\\AddBook.cshtml",
+              "RelativeDocumentMoniker": "Library\\Views\\Book\\AddBook.cshtml",
+              "ToolTip": "E:\\Dot Net\\Library\\Library\\Views\\Book\\AddBook.cshtml",
+              "RelativeToolTip": "Library\\Views\\Book\\AddBook.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-26T07:17:40.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Dot Net\\Library\\Library\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Dot Net\\Library\\Library\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Library\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T06:06:09.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "E:\\Dot Net\\Library\\Library\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "Library\\Controllers\\BookController.cs",
+              "ToolTip": "E:\\Dot Net\\Library\\Library\\Controllers\\BookController.cs",
+              "RelativeToolTip": "Library\\Controllers\\BookController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T05:41:35.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookDetails.cshtml",
+              "DocumentMoniker": "E:\\Dot Net\\Library\\Library\\Views\\Book\\BookDetails.cshtml",
+              "RelativeDocumentMoniker": "Library\\Views\\Book\\BookDetails.cshtml",
+              "ToolTip": "E:\\Dot Net\\Library\\Library\\Views\\Book\\BookDetails.cshtml",
+              "RelativeToolTip": "Library\\Views\\Book\\BookDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-26T05:58:48.704Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

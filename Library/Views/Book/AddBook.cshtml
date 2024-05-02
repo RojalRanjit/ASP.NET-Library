@@ -1,0 +1,26 @@
+﻿@model List<Genre>
+<h1 class="row d-flex justify-content-center align-items-center text-white">Add Books</h1>
+<div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-5 text-white">
+            <form asp-action="AddBook" asp-controller="Book" method="Post" enctype="multipart/form-data">
+                <label class="fw-bolder">Title</label>
+                <input type="text" name="title" class="form-control" placeholder="Title"/>
+                <label class="fw-bolder">Genre</label>
+                <select name="GenreId" class="form-select" >
+                    @foreach(var gen in Model)
+                    {
+                        <option value="@gen.GenreId">@gen.Name</option>
+                    }
+                </select>
+                <label class="fw-bolder">Image</label>
+                <input type="file" name="Image" class="form-control"/>
+                <label class="fw-bolder">Language</label>
+                <input type="text" name="language" class="form-control mb-3" placeholder="Language"/>
+                <button class="btn btn-success mb-2 align-items-center" type="submit">Add Book</button>
+                <a class="btn btn-primary mb-2 align-items-center" asp-action="AddGenre" asp-controller="Book">Add Genre</a>
+            </form>
+        </div>
+    </div>
+</div>
+

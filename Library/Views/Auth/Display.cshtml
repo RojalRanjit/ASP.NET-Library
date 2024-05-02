@@ -1,0 +1,49 @@
+﻿@model List<Book>
+@{
+
+}
+
+<style>
+    .table td, .table th{
+        vertical-align: middle !important;
+        text-align: center;
+    }
+</style>
+<a class="btn btn-primary" asp-action="AddBook" asp-controller="Book">Add Books</a>
+<h1 class="row d-flex justify-content-center align-items-center text-white">My Books</h1>
+<table class="table" style="background: white" id="display">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Language</th>
+            <th>Action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var data in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@Url.Content(data.Image)" width="200px" height="200px" alt="Alternate Text" style="object-fit:contain !important"/>
+                </td>
+                <td >@data.Title</td>
+                <td >@data.Genre.Name</td>
+                <td >@data.Language</td>
+                <td >
+                    <a class="btn btn-warning" asp-action="Edit" asp-controller="Book" asp-route-id="@data.BookId">Edit</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-controller="Book" asp-route-id="@data.BookId">Delete</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+       $("#display").DataTable();
+    })
+</script>

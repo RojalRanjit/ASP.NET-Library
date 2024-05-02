@@ -1,0 +1,23 @@
+﻿@model Book
+
+<div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-5">
+            <form asp-action="Edit" asp-controller="Book" method="Post" enctype="multipart/form-data">
+                <input type="text" name="BookId" value="@Model.BookId" hidden/>
+                <label>Titile</label>
+                <input type="text" name="title" class="form-control" value="@Model.Title"/>
+                <label>Genre</label>
+                <select name="GenreId" class="form-select">
+                    <option value="@Model.Genre">@Model.Genre.Name</option>
+                </select>
+@*                 <input type="text" name="genre" class="form-control" value="@Model.Genre"/> *@
+                <label>Image</label>
+                <input type="file" name="Image" class="form-control" value="@Model.Image"/>
+                <label>Language</label>
+                <input type="text" name="language" class="form-control mb-3" value="@Model.Language"/>
+                <button class="btn btn-success mb-2 align-items-center" type="submit">Update</button>
+            </form>
+        </div>
+    </div>
+</div>
